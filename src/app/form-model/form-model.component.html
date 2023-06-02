@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <h2>Create Account</h2>
+    <form  (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" [(ngModel)]="employeForm.name" class="form-control" id="name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" [(ngModel)]="employeForm.email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input name="password" [(ngModel)]="employeForm.password" type="password" class="form-control" id="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
